@@ -23,6 +23,7 @@ function onInput(e) {
     }
     appendCountryContent(result);
     if (result.status === 404) {
+        clearMarkup();
       Notiflix.Notify.failure('Oops, there is no country with that name');
     }
   });
